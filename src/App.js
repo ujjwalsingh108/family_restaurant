@@ -1,29 +1,31 @@
 import React from 'react';
-import Menu from './Component/MenuComponent';
+import Main from './Component/MainComponent';
+import { BrowserRouter } from 'react-router-dom';
 import './App.css';
-import { Navbar, NavbarBrand } from 'reactstrap';
-import {DISHES} from './Shared/dishes';
+
 class App extends React.Component{
-
-  constructor(props){
-    super(props);
-    this.state ={
-      dishes: DISHES
-    }
-  }
-
-  render(){
+  
+  render(){    
     return(
-      <div>
-        <Navbar dark color='primary'>
-          <div className='container'>
-            <NavbarBrand href='/'>Restaurant</NavbarBrand>
+        <BrowserRouter>
+          <div className='App'>
+            <Main />
           </div>
-        </Navbar>
-        <Menu dishes={this.state.dishes} />
-      </div>
+        </BrowserRouter>
     );
   }
 }
 
 export default App;
+
+
+/**
+ * To traverse between different views inside our application, we use react-router.
+ * 
+ * To install react-router into our application, we do --> npm install react-router-dom --save
+ * 
+ * 
+ * After importing the 'BrowserRouter' from react-router-dom, we've to surround the div element within browserRouter element.
+ * 
+ * Now we can use its properties inside any component.
+ */
