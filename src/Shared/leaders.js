@@ -29,7 +29,7 @@ export const LEADERS = [
     {
       id: 3,
       name: 'Ujjwal Singh',
-      image: '/assets/images/Ujjwal1.jpg',
+      image: "assets/images/Ujjwal1.jpg",
       designation: 'Executive Chef',
       abbr: 'EC',
       featured: true,
