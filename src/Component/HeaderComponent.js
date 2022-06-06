@@ -41,7 +41,7 @@ class Header extends React.Component{
                     <div className="container">
                         <NavbarToggler onClick={this.toggleNav} />
                         <NavbarBrand className="mr-auto" href="/" style={{float:"left"}}>
-                            <img src='assets/images/logo.png' height="41" width="41" alt='Tadka Restaurant' />
+                            <img src='/assets/images/logo.png' height="41" width="41" alt='Tadka Restaurant' />
                         </NavbarBrand>
                         <Collapse isOpen={this.state.isNavOpen} navbar style={{float:"right"}}>
                             <Nav navbar>
